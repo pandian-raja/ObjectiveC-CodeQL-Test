@@ -20,7 +20,9 @@
 }
 
 - (void)ultimateBug {
-    [self ultimateBug];
+    while (true) {
+        NSLog(@"Endless");
+    }
 }
 
 
