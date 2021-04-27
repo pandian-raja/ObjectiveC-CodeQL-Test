@@ -16,12 +16,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self ultimateBug];
+    [self ultimateBug:0];
 }
 
-- (void)ultimateBug {
-    while (true) {
-        NSLog(@"Endless");
+- (void)ultimateBug:(int)z {
+    if (z == 0) {
+        int x = 1 / z; 
     }
 }
 
