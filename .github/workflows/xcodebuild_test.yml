@@ -5,5 +5,4 @@ jobs:
     runs-on: macOS-latest
     steps:
       - name: Check xcodebuild version
-        run: |
-           ls -l
+        run: xcodebuild -version
