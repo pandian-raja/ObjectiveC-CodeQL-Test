@@ -6,5 +6,6 @@ jobs:
     steps:
       - name: Install Infer Brew Package
         run: brew install infer
-      - name: Code Scan VC.m
-        run: infer run -- clang -c ./ObjectiveC\ CodeQL\ Test/ViewController.m
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
