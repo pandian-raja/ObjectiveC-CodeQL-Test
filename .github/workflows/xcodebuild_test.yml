@@ -4,5 +4,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: macOS-latest
     steps:
-      - name: Check xcodebuild version
-        run: xcodebuild -version
+      - name: Install Infer Brew Package
+        run: brew install infer
+      - name: Code Scan 
+        run: infer run -- clang -c ./ObjectiveC-CodeQL-Test/ObjectiveC CodeQL Test/ViewController.m
