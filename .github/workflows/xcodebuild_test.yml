@@ -7,4 +7,4 @@ jobs:
       - name: Install Infer Brew Package
         run: brew install infer
       - name: List files in the repository
-        run: infer run -- clang -c ./ViewController.m
+        run: infer run -- clang -c ObjectiveC-CodeQL-Test/ViewController.m
