@@ -7,5 +7,4 @@ jobs:
       - name: Install Infer Brew Package
         run: brew install infer
       - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
+        run: infer run -- clang -c ViewController.m
