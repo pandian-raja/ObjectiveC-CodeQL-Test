@@ -1,0 +1,9 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: macOS-latest
+    steps:
+      - name: Check xcodebuild version
+        run: |
+          xcodebuild -version
