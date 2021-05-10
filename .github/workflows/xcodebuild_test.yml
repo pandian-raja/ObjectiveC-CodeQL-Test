@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: Install Infer Brew Package
         run: brew install infer
-      - name: Code Scan 
-        run: infer run -- clang -c ObjectiveC\ CodeQL\ Test/ViewController.m
+      - name: Code Scan Hello.m
+        run: infer run -- clang -c Hello.m
+      - name: Code Scan VC.m
+        run: infer run -- clang -c ./ObjectiveC\ CodeQL\ Test/ViewController.m
